@@ -5,22 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box{
-            height: 400px;
-            width:400px;
-            background-color: aqua;
+        .container{
             border: solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row ;
+            width: 500px;
         }
-        @media (min-width:300px) and (max-width:500px){
-            .box{
-                background: green;
+        #boxleft{
+            background-color: aquamarine;
+            border: solid blue ;
+            margin: 4px;
+            width: 250px;   
+          
+        }
+        #boxright{
+            background-color: yellow;
+            border: 1px solid brown;
+            margin: 4px;
+            width: 250px;
+        }
+        p{
+            border:1px solid red;
+
+        }
+        img{
+            width 170px;
+            
+        }
+        @media(max-width: 640px){
+            .container{
+                flex-direction: column;
             }
-            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="box">
-        hellow ji
+    <div class="container">
+        <div id="boxleft">
+            <p>text</p>
+            <p>text</p>
+        </div>
+        <div id="boxright">
+            <img src="Bhagat_Singh_1929.jpg" alt="Bhagat Singh">
+        </div>
     </div>
 </body>
 </html>
