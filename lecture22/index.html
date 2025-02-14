@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        :root{
+            --primary-color: brown;
+            --custom-width: 330px;
+        }
         .container{
             border: 2px solid black;
             background-color: aqua;
             height: 650px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+/* use for variblae custom   width: var(--custom-width); */
+            
         }
         .box{
             background-color: yellow;
@@ -17,14 +26,24 @@
             height: 450px;
             width: 350px;
             border-radius: 4px solid green;
+           /* Add the shadow-> box-shadow:20px 20px brown;*/
+           box-shadow: inset 0px 0px 20px 10px brown;
 
+        }
+        img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #head1{
+            text-shadow: 20px 15px 3px red;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="box">
-            <h1>Bhagat Singh</h1>
+            <h1 id="head1">Bhagat Singh</h1>
             <img src="Bhagat_Singh_1929.jpg" alt="Bhagat Singh">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit nulla quia saepe natus sunt in odit distinctio possimus cupiditate ipsum?</p>
         </div>
