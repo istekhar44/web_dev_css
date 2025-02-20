@@ -3,28 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Transition</title>
     <style>
-        .box{
+           .box{
             height: 400px;
-            width: 400px;
-            background-color: yellow;
-            transition-property: width;
+            width: 300px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transition-property-all: width;
             transition-duration: 4s;
             transition-delay: 1s;
-            border: 2px solid black;
             transition-timing-function: liner;
+             */
+             /* transition: all 0.5s ease-out 4s allow-discrete; */
 
-        }
-        .box:hover{
+             transition: height 8s, width 2s;
+
+           }
+           .box:hover{
             width: 1800px;
+            height: 3000px;
             background-color: blue;
-        }
+
+           }
     </style>
 </head>
 <body>
-    <div class=".box">
-
+    <div class="box">
+         
     </div>
 </body>
 </html>
