@@ -1,0 +1,81 @@
+In CSS, containers and items often refer to parent and child elements in a layout system, such as **Flexbox** or **Grid**. Below is a separation of properties typically used for **containers** (parent elements) and **items** (child elements):
+
+---
+
+### **Properties for Containers (Parent Elements)**
+These properties are applied to the parent element to control the layout and behavior of its children.
+
+#### **Flexbox Container Properties**:
+1. **Display**:
+   - `display: flex;` (defines a flex container)
+2. **Direction**:
+   - `flex-direction: row | row-reverse | column | column-reverse;` (sets the direction of items)
+3. **Alignment**:
+   - `justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly;` (aligns items along the main axis)
+   - `align-items: flex-start | flex-end | center | baseline | stretch;` (aligns items along the cross axis)
+   - `align-content: flex-start | flex-end | center | space-between | space-around | stretch;` (aligns multiple lines of items)
+4. **Wrapping**:
+   - `flex-wrap: nowrap | wrap | wrap-reverse;` (controls whether items wrap to new lines)
+5. **Gap**:
+   - `gap: <value>;` (sets spacing between items)
+
+#### **Grid Container Properties**:
+1. **Display**:
+   - `display: grid;` (defines a grid container)
+2. **Grid Template**:
+   - `grid-template-columns: <track-sizes>;` (defines column sizes)
+   - `grid-template-rows: <track-sizes>;` (defines row sizes)
+   - `grid-template-areas: <area-names>;` (defines named grid areas)
+3. **Alignment**:
+   - `justify-items: start | end | center | stretch;` (aligns items along the row axis)
+   - `align-items: start | end | center | stretch;` (aligns items along the column axis)
+   - `justify-content: start | end | center | stretch | space-around | space-between | space-evenly;` (aligns the grid along the row axis)
+   - `align-content: start | end | center | stretch | space-around | space-between | space-evenly;` (aligns the grid along the column axis)
+4. **Gap**:
+   - `gap: <value>;` or `row-gap: <value>;` and `column-gap: <value>;` (sets spacing between rows and columns)
+5. **Auto Rows/Columns**:
+   - `grid-auto-rows: <track-size>;` (defines size of implicitly created rows)
+   - `grid-auto-columns: <track-size>;` (defines size of implicitly created columns)
+   - `grid-auto-flow: row | column | dense;` (controls how auto-placed items are inserted)
+
+---
+
+### **Properties for Items (Child Elements)**
+These properties are applied to the child elements within a container to control their individual behavior and layout.
+
+#### **Flexbox Item Properties**:
+1. **Order**:
+   - `order: <integer>;` (controls the order of items)
+2. **Flexibility**:
+   - `flex-grow: <number>;` (defines how much an item can grow relative to others)
+   - `flex-shrink: <number>;` (defines how much an item can shrink relative to others)
+   - `flex-basis: <length> | auto;` (defines the initial size of an item)
+   - `flex: <grow> <shrink> <basis>;` (shorthand for the above properties)
+3. **Alignment**:
+   - `align-self: auto | flex-start | flex-end | center | baseline | stretch;` (overrides container's `align-items` for this item)
+
+#### **Grid Item Properties**:
+1. **Placement**:
+   - `grid-column-start: <line>;` (start position of the item in the grid columns)
+   - `grid-column-end: <line>;` (end position of the item in the grid columns)
+   - `grid-row-start: <line>;` (start position of the item in the grid rows)
+   - `grid-row-end: <line>;` (end position of the item in the grid rows)
+   - Shorthand:
+     - `grid-column: <start> / <end>;`
+     - `grid-row: <start> / <end>;`
+     - `grid-area: <name> | <row-start> / <column-start> / <row-end> / <column-end>;` (places item in a named area or specific grid area)
+2. **Alignment**:
+   - `justify-self: start | end | center | stretch;` (aligns the item along the row axis)
+   - `align-self: start | end | center | stretch;` (aligns the item along the column axis)
+
+---
+
+### **Summary of Separation**
+- **Container Properties**: Focus on defining the layout system (Flexbox or Grid), alignment, spacing, and wrapping behavior.
+  - Examples: `display: flex;`, `justify-content: center;`, `grid-template-columns: 1fr 1fr;`, `gap: 10px;`
+- **Item Properties**: Focus on individual item behavior, such as order, flexibility, and placement within the container.
+  - Examples: `flex-grow: 1;`, `order: 2;`, `grid-column: 1 / 3;`, `align-self: center;`
+
+---
+
+Let me know if you need further clarification or examples!
