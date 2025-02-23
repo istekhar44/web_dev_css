@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ body{
+    height: 100vh;
+    width: 100vw;
+ }
+.continer{
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(15,1fr);
+    background-color: blue;
+    row-gap: 25px;
+    column-gap: 25px;
+
+
+}
+.item{
+    background: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: violet;
+    border: 3px solid black;
+    color: azure;
+    font-weight: 600;
+    font-size: 60px;
+   
+}
+.header{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.menu{
+    grid-column-start: 2;
+    grid-column-end: 5;
+}
+.hero{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 10;
+}
+.main{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+.blank{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 10;
+    grid-row-end: 15;
+}
+.img{
+    grid-column-start: ;
+    grid-column-end: ;
+    grid-row-start: 10;
+    grid-row-end: 12;
+}
+.extra{
+    grid-column-start: 4;
+    grid-column-end: ;
+    grid-row-start: 12;
+    grid-row-end: 15;
+
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 5;
+   
+}
