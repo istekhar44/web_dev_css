@@ -13,22 +13,27 @@
 // }
 
 // calculator making 
-let num1 = Number(prompt("Enter the integer"));
-console.log(Number ,"Enter the number");
+// let num1 = Number(prompt("Enter the integer"));
+// console.log(Number ,"Enter the number");
 
-let operator = operator(prompt("enter the operator (+ ,- ,* ,% ,/"))
+// let operator = operator(prompt("enter the operator (+ ,- ,* ,% ,/"))
 
-let num2 = Number(prompt("Enter the integer"));
-console.log(Number ,"Enter the number");
+// let num2 = Number(prompt("Enter the integer"));
+// console.log(Number ,"Enter the number");
 
-if(operator === "+"){
-    console.log('result {num1 + num2}');
+// if(operator === "+"){
+//     console.log('result {num1 + num2}');
     
-}else if (operator = "-"){
-    console.log('result {num1-num2}');
-}else if (operator = "*"){
-    console.log('result {num * num2}');
-}
-else {
-    console.log('Invalid operator');
-}
+// }else if (operator = "-"){
+//     console.log('result {num1-num2}');
+// }else if (operator = "*"){
+//     console.log('result {num * num2}');
+// }
+// else {
+//     console.log('Invalid operator');
+// }
+        // varible for dynamically 
+// let marks = 20;
+// marks= "baaar";
+// marks = true;
+
